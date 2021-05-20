@@ -1,0 +1,8 @@
+<h3>Name: <%= @dog.name %> </h3>
+<h3>Age: <%= @dog.age %> </h3>
+<h3>Breed: <%= @dog.breed %> </h3>
+<%@dog.employees.each do |e|%>
+<h3>Employees: <%=e.first_name %> <%=e.last_name%></h3>
+<%end%>
+
+<button> <%= link_to "Go to dogs page", dogs_path %> </button>
